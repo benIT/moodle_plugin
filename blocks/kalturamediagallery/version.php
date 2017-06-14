@@ -1,6 +1,4 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -14,19 +12,13 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Strings for component 'atto_media', language 'en'.
- *
- * @package    atto_media
- * @copyright  2013 Damyon Wiese  <damyon@moodle.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
+defined('MOODLE_INTERNAL') || die();
 
-require_once(dirname(dirname(dirname(dirname(dirname(dirname(dirname(dirname(__FILE__)))))))).'/config.php');
-require_once($CFG->dirroot.'/local/kaltura/locallib.php');
-
-
-$string['pluginname'] = 'Embed Kaltura Media';
-$string['popuptitle'] = 'Select Media';
-$string['embedbuttontext'] = 'Embed';
-$string['browse_and_embed'] = 'Browse and Embed';
+$plugin->version   = 2017061232;
+$plugin->release = 'Kaltura release 4.0.11';
+$plugin->requires  = 2014050800;
+$plugin->component = 'block_kalturamediagallery';
+$plugin->dependencies = array(
+    'local_kaltura' => 2017061232,
+    'local_kalturamediagallery' => 2017061232
+);

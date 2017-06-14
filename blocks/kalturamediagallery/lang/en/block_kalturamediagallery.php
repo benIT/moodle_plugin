@@ -14,19 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/**
- * Strings for component 'atto_media', language 'en'.
- *
- * @package    atto_media
- * @copyright  2013 Damyon Wiese  <damyon@moodle.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-
-require_once(dirname(dirname(dirname(dirname(dirname(dirname(dirname(dirname(__FILE__)))))))).'/config.php');
-require_once($CFG->dirroot.'/local/kaltura/locallib.php');
-
-
-$string['pluginname'] = 'Embed Kaltura Media';
-$string['popuptitle'] = 'Select Media';
-$string['embedbuttontext'] = 'Embed';
-$string['browse_and_embed'] = 'Browse and Embed';
+$string['pluginname'] = 'Kaltura Media Gallery';
+$string['kalturamediagallery:addinstance'] = 'Add a new Kaltura Media Gallery block';
+$string['kalturamediagallery:myaddinstance'] = 'Add a new Kaltura Media Gallery block to Dashboard';
